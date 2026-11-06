@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: holdpay
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/holdpay}
+    username: ${DB_USERNAME:holdpay}
+    password: ${DB_PASSWORD:holdpay}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+management:
+  endpoint:
+    health:
+      show-details: always
